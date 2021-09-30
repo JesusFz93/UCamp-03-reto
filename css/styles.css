@@ -1,10 +1,18 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
 }
 
 .section1 {
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
+
+  background-image: linear-gradient(to top, #68e0cf 100%, #209cff 0%);
 
   /* height: 74vh;
   width: auto;
@@ -17,6 +25,7 @@
 }
 
 .cesped {
+  
   bottom: 0;
   left: 0;
   /* position: absolute;
@@ -25,17 +34,23 @@
   margin-top: 48vh;
 }
 
+.cesped path {
+  stroke: none; fill: #adff2f;
+  background-image: linear-gradient(to top, #68e0cf 100%, #209cff 0%);
+}
+
+
 .arbol {
+  background-image: url("/assets/rg1024-soft-trees-2.svg");
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+
   position: absolute;
 
   bottom: 100px;
   right: 160px;
   z-index: 999;
-}
-
-.arbol img {
-  width: 500px;
-  height: 500px;
 }
 
 .nubes {
@@ -44,17 +59,23 @@
   background-image: url("/assets/nube.png");
   background-size: 250px;
   background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
 }
 
 .saludo {
+  color: rgb(236, 240, 28);
   display: inline-block;
 
   position: absolute;
 
-  left: 350px;
-  top: 430px;
+  left: 13%;
+  top: 45%;
 
-  font-size: 50px;
+  /* left: 350px;
+  top: 430px; */
+
+  font-size: 70px;
 }
 
 /* 
@@ -66,14 +87,27 @@
   text-align: center;
 
   height: 100vh;
-  display: flex;
 }
 
 .tarjeta {
-  justify-content: center;
-  align-items: center;
   border: solid 1px black;
 
-  width: 30%;
-  height: 500px;
+  width: 25%;
+  height: auto;
+  margin: 25vh 1%;
+
+  display: inline-block;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta header {
+  border: solid 1px black;
+}
+
+.tarjeta p {
+  border: solid 1px black;
 }
