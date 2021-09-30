@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SimpsonsFont";
+  src: url("/assets/fonts/Simpsonfont.otf") format("truetype");
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -5,14 +10,15 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: SimpsonsFont, "Arial Narrow", Arial, sans-serif;
   min-height: 100vh;
 }
 
 .section1 {
   /* background-color: lightskyblue; */
 
-  background-image: linear-gradient(to top, #68e0cf 100%, #209cff 0%);
+  background-image: linear-gradient(to top, #209cff 100%, #b4ddff 0%);
+  /* background-image: linear-gradient(to top, #4facfe 0%, #70f5fa 100%); */
 
   /* height: 74vh;
   width: auto;
@@ -25,7 +31,6 @@ body {
 }
 
 .cesped {
-  
   bottom: 0;
   left: 0;
   /* position: absolute;
@@ -35,10 +40,10 @@ body {
 }
 
 .cesped path {
-  stroke: none; fill: #adff2f;
+  stroke: none;
+  fill: #adff2f;
   background-image: linear-gradient(to top, #68e0cf 100%, #209cff 0%);
 }
-
 
 .arbol {
   background-image: url("/assets/rg1024-soft-trees-2.svg");
@@ -82,7 +87,7 @@ body {
     border: solid 1px black; 
 */
 
-.section2 {
+/* .section2 {
   border: solid 1px blue;
   text-align: center;
 
@@ -110,4 +115,76 @@ body {
 
 .tarjeta p {
   border: solid 1px black;
+} */
+
+.seccion2 {
+  /* background-image: linear-gradient(to top, #f13030 0%, #70f5fa 90%); */
+  background-color: rgb(133, 67, 20);
+  /* border: solid 1px black; */
+
+  height: 100vh;
+  text-align: center;
+}
+
+.cards {
+  /* border: solid 1px blue; */
+
+  width: 90%;
+  height: 50%;
+}
+
+.card {
+  /* border: solid 1px orange; */
+
+  width: 25%;
+  height: 100%;
+
+  display: inline-block;
+
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 10px 10px #888888;
+
+  margin: 25vh 1%;
+}
+
+.card1 {
+  background-image: linear-gradient(to top, #fdd41e 100%, #f8f083 100%);
+}
+
+.card2 {
+  background-image: linear-gradient(to top, #209cff 100%, #b4ddff 0%);
+}
+
+.head1 {
+  background-image: linear-gradient(to top, #f05c31 100%, #209cff 0%);
+}
+
+.head2 {
+  background-image: linear-gradient(to top, #fdd41e 100%, #f8f083 100%);
+}
+
+.card-image {
+  /* border: solid 1px red; */
+
+  width: 100%;
+  height: 60%;
+}
+
+.card-header {
+  border: solid 1px black;
+
+  width: 100%;
+  height: 10%;
+}
+
+.card-parragraph {
+  /* border: solid 1px red; */
+
+  font-size: 90%;
+
+  width: 100%;
+  height: 30%;
+  padding-top: 1vh;
 }
